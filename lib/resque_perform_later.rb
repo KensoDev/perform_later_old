@@ -25,7 +25,7 @@ class ResquePerformLater
       end
     } if args
   end
-
+  
   def self.args_from_resque(args)
     args = args.map { |o|
       puts o
