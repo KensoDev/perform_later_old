@@ -28,7 +28,6 @@ class ResquePerformLater
   
   def self.args_from_resque(args)
     args = args.map { |o|
-      puts o
       if o
         case o
         when CLASS_STRING_FORMAT  then $1.constantize
